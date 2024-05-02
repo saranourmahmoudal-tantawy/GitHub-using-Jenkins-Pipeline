@@ -9,7 +9,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Hello sara"
-            }   
+            } 
+        }
+         stage('deploy') {
+            steps {
+                echo "Hello sara nour"
+            }
+        )
+         }
     }
-    }
-}
+
