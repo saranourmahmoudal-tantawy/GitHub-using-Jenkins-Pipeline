@@ -81,6 +81,11 @@ pipeline {
 1. Log in to the AWS Management Console.
 2. Navigate to the EC2 dashboard.
 3. Launch a new EC2 instance with Amazon Linux 2 AMI.
+Note :
+Add inbound rule in the security group of the EC2 instance:
+Type: Custom TCP
+Port Range: 8080
+source: 0.0.0.0/0
 
 ### Install Jenkins on EC2:
 
