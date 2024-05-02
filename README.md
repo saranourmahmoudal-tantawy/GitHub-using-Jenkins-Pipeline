@@ -99,5 +99,50 @@ pipeline {
    sudo yum upgrade
    sudo yum install jenkins
    ```
+4. Start Jenkins service on EC2
+   ```bash
+   sudo systemctl daemon-reload
+   sudo systemctl start jenkins
+    ```
+
+## Manage Jenkins:
+
+1. **Open Jenkins Dashboard:**
+   - Open a web browser.
+   - Enter the public IP address of your EC2 instance followed by port 8080 (e.g., http://<EC2_public_IP>:8080).
+   - Press Enter to navigate to the Jenkins dashboard.
+
+2. **Unlock Jenkins and Set Up Admin User:**
+   - Follow the on-screen instructions to unlock Jenkins.
+   - Set up an admin user by providing the necessary details.
+
+## Configure Jenkins to Connect to GitHub:
+
+1. **Install GitHub Integration Plugin:**
+   - Go to "Manage Jenkins" > "Manage Plugins" > "Available".
+   - Search for "GitHub Integration Plugin" and install it.
+
+2. **Set Up GitHub Credentials:**
+   - Go to "Manage Jenkins" > "Manage Credentials".
+   - Click on "Global credentials (unrestricted)" and then "Add Credentials".
+   - Choose "Username with password" as the kind.
+   - Enter your GitHub username and token.
+   - Save the credentials.
+
+## Create a New Pipeline Job:
+
+1. **Create a New Item:**
+   - From the Jenkins dashboard, click on "New Item".
+   - Enter a name for your pipeline (e.g., "GitHub Pipeline").
+   - Choose "Pipeline" as the type.
+   - Click "OK" to proceed.
+
+2. **Configure Pipeline Script from SCM:**
+   - In the pipeline configuration, select "Pipeline script from SCM".
+   - Choose "Git" as the SCM.
+   - Enter the repository URL and credentials.
+   - Specify the branch to build (e.g., */develop).
+   - Save the configuration.
+
 
 
