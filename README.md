@@ -43,6 +43,8 @@ sudo ./gitflow-installer.sh
 
 ```bash
 git flow init
+```
+
 
 
 
