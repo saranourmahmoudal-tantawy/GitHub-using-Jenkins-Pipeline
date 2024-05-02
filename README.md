@@ -90,7 +90,7 @@ pipeline {
    ```bash
    ssh -i <path_to_your_key_pair.pem> ec2-user@<your_ec2_public_ip>
    ```
-3.install Jenkins
+3. install Jenkins
    ```bash
    sudo yum install java-17-amazon-corretto-devel -y
    sudo wget -O /etc/yum.repos.d/jenkins.repo \
