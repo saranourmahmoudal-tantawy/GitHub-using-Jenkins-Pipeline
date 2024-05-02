@@ -31,6 +31,14 @@ This project demonstrates the integration of Jenkins with a GitHub repository to
     git push origin develop
     ```
 
+### Install Git Flow tools on your local machine:
+
+```bash
+git clone -b feature/https-remote https://github.com/jgonggrijp/gitflow.git
+curl -OL https://raw.github.com/jgonggrijp/gitflow/develop/contrib/gitflow-installer.sh
+chmod +x gitflow-installer.sh
+sudo ./gitflow-installer.sh
+```
 
 
 
