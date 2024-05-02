@@ -82,7 +82,7 @@ pipeline {
 2. Navigate to the EC2 dashboard.
 3. Launch a new EC2 instance with Amazon Linux 2 AMI.
 
-## Install Jenkins on EC2:
+### Install Jenkins on EC2:
 
 ### Connect to Your EC2 Instance Using SSH:
 1. Open a terminal or command prompt.
