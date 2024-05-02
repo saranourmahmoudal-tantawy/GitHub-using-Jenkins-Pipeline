@@ -39,6 +39,10 @@ curl -OL https://raw.github.com/jgonggrijp/gitflow/develop/contrib/gitflow-insta
 chmod +x gitflow-installer.sh
 sudo ./gitflow-installer.sh
 ```
+### Initialize Git Flow in your repository with default branch names:
+
+```bash
+git flow init
 
 
 
