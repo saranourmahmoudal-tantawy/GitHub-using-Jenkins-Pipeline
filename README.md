@@ -83,7 +83,9 @@ pipeline {
 3. Launch a new EC2 instance with Amazon Linux 2 AMI.
 
 Note :
+
 Add inbound rule in the security group of the EC2 instance:
+
 Type: Custom TCP
 
 Port Range: 8080
