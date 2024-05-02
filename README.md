@@ -75,7 +75,7 @@ pipeline {
 }
 ```
 
-# Jenkins Setup on AWS EC2
+## Jenkins Setup on AWS EC2
 
 ### Launch an AWS EC2 Instance:
 1. Log in to the AWS Management Console.
@@ -144,5 +144,35 @@ pipeline {
    - Specify the branch to build (e.g., */develop).
    - Save the configuration.
 
+## Implement Webhooks for Continuous Integration:
 
+1. **Go to GitHub Repository Settings:**
+   - Open your repository settings on GitHub.
+
+2. **Add a New Webhook:**
+   - Navigate to the "Webhooks" section.
+
+3. **Configure Webhook Settings:**
+   - Click on "Add webhook" or "Create webhook".
+   - Set the Payload URL to http://<your-jenkins-url>/github-webhook/.
+   - Choose "application/json" as the Content type.
+   - Select "Just the push event" for the events to trigger Jenkins builds.
+   - Ensure that the webhook is active.
+
+4. **Save Webhook Configuration:**
+   - Click on "Add webhook" or "Create webhook" to save the configuration.
+
+
+## Testing and Validation:
+
+1. **Push Changes to the Develop Branch:**
+   - Make changes to your code and push them to the develop branch of your GitHub repository.
+
+2. **Verify Jenkins Automation:**
+   - Check Jenkins to ensure that it automatically triggers a build upon receiving the webhook payload.
+   - Monitor Jenkins console output to confirm the successful execution of the defined pipeline stages in the Jenkinsfile.
+
+3. **Ensure Successful Execution:**
+   - Validate that the build, test, and deploy stages are executed without errors.
+   - Review the Jenkins console output for any error messages or warnings.
 
