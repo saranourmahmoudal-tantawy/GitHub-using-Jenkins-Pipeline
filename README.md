@@ -84,7 +84,7 @@ pipeline {
 
 ### Install Jenkins on EC2:
 
-### Connect to Your EC2 Instance Using SSH:
+**Connect to Your EC2 Instance Using SSH**
 1. Open a terminal or command prompt.
 2. Use SSH to connect to your EC2 instance:
    ```bash
