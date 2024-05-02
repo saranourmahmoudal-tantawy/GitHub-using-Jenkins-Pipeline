@@ -1,6 +1,6 @@
 # GitHub-using-Jenkins-Pipeline
 ## Overview
-This project demonstrates the integration of Jenkins with a GitHub repository to automate the build and test processes using a Jenkinsfile.
+This project demonstrates the integration of Jenkins with a GitHub repository to automate the build, test and deploy processes using a Jenkinsfile.
 
 ## Tools Needed
 1- **AWS EC2:** Virtual server hosting platform for deploying Jenkins and running CI/CD pipelines.
