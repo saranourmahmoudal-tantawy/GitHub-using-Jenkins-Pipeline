@@ -59,24 +59,33 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                // Add build steps here
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                // Add test steps here
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                // Add deployment steps here
             }
         }
     }
 }
 
 
+# Jenkins Setup on AWS EC2
+
+### Launch an AWS EC2 Instance:
+1. Log in to the AWS Management Console.
+2. Navigate to the EC2 dashboard.
+3. Launch a new EC2 instance with Amazon Linux 2 AMI.
+
+### Install Java 17 (Amazon Corretto) on EC2:
+1. Connect to your EC2 instance using SSH.
+2. Run the following command to install Java 17:
+   ```bash
+   sudo yum install java-17-amazon-corretto-devel -y
 
 
