@@ -82,10 +82,22 @@ pipeline {
 2. Navigate to the EC2 dashboard.
 3. Launch a new EC2 instance with Amazon Linux 2 AMI.
 
-### Install Java 17 (Amazon Corretto) on EC2:
-1. Connect to your EC2 instance using SSH.
-2. Run the following command to install Java 17:
+## Install Jenkins on EC2:
+
+### Connect to Your EC2 Instance Using SSH:
+1. Open a terminal or command prompt.
+2. Use SSH to connect to your EC2 instance:
    ```bash
+   ssh -i <path_to_your_key_pair.pem> ec2-user@<your_ec2_public_ip>
+   ```
+3.install Jenkins
+  ```bash
    sudo yum install java-17-amazon-corretto-devel -y
+   sudo wget -O /etc/yum.repos.d/jenkins.repo \
+   https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+   sudo yum upgrade
+   sudo yum install jenkins
+   ```
 
 
