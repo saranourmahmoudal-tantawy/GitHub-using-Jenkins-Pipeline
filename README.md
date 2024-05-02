@@ -13,6 +13,24 @@ This project demonstrates the integration of Jenkins with a GitHub repository to
 
 5- **Git Flow:** A branching model for Git that helps manage large projects with multiple features and releases.
 
+# Setup Instructions
+
+## GitHub Repository Setup
+
+1. **Create a new GitHub repository:**
+    - Log in to your GitHub account.
+    - Click on the "+" icon in the top-right corner and select "New repository".
+    - Choose a name for your repository, add a description, and select "Initialize this repository with a README".
+    - Click "Create repository".
+
+2. **Ensure the repository contains at least two branches:**
+    - GitHub typically initializes with the main branch.
+    - Create a develop branch using the following commands:
+    ```bash
+    git checkout -b develop
+    git push origin develop
+    ```
+
 
 
 
