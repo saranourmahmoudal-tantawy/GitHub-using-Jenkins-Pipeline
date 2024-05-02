@@ -45,6 +45,37 @@ sudo ./gitflow-installer.sh
 git flow init
 ```
 
+### Add a Jenkinsfile to your repository:
+
+1. Create a file named Jenkinsfile in the root directory of your repository.
+
+2. Use the following template for a basic pipeline:
+
+```groovy
+pipeline {
+    agent any
+    
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                // Add build steps here
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+                // Add test steps here
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+                // Add deployment steps here
+            }
+        }
+    }
+}
 
 
 
